@@ -45,7 +45,7 @@ const ChartWareHouse: React.FC = () => {
                 },
                 title: {
                     display: true,
-                    text: 'Daily Revenue',
+                    text: 'Doanh thu mỗi ngày',
                 },
             },
             maintainAspectRatio: false,

@@ -7,6 +7,7 @@ import styles from '../../styles/styles.module.css';
 import Content from '../app/content/page';
 import Card from '../components/card/Card'
 import ChartWareHouse from '../components/chart/ChartWareHouse'
+import RecentOrders from '../components/orders/RecentOrders'
 
 //const inter = Inter({ subsets: ['latin'] })
 
@@ -24,7 +25,10 @@ export default function Home() {
       // className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
       >
         <Card></Card>
-        <ChartWareHouse></ChartWareHouse>
+        <div className="className='p-4 grid md:grid-cols-3 grid-cols-1 gap-4'">
+          <ChartWareHouse />
+          <RecentOrders />
+        </div>
       </main>
     </div>
   )
