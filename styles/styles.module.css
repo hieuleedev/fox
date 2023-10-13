@@ -1,6 +1,7 @@
  /* css SideBar */
  .leftSideBar {
      width: 2%;
+     height: 715px;
      background-color: rgb(218, 230, 190);
  }
 
@@ -34,6 +35,14 @@
      align-items: center;
  }
 
+ .icon1 {
+     text-decoration: none;
+     padding: 15px 15px;
+     display: flex;
+     align-items: center;
+     background-color: rgb(224, 236, 215);
+ }
+
  .icon:hover {
      background-color: #c6cad0;
  }
@@ -44,9 +53,9 @@
      padding: 0;
  }
 
- .li {
-     margin: 0 10px;
+ .li2 {
      /* Khoảng cách giữa các phần tử */
+     display: flex;
  }
 
  /* css Header */

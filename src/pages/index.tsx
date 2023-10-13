@@ -1,25 +1,30 @@
 import Image from 'next/image'
+import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
 import Sidebar from '../components/sidebar/Sidebar'
 import Header from '../components/header/Header'
 import styles from '../../styles/styles.module.css';
+import Content from '../app/content/page';
+import Card from '../components/card/Card'
+import ChartWareHouse from '../components/chart/ChartWareHouse'
 
-const inter = Inter({ subsets: ['latin'] })
+//const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <div>
-
-      <ul className={styles.container}>
-        <li className={styles.leftSideBar}></li>
-        <li className={styles.li}><Sidebar></Sidebar></li>
-        <li className={styles.li}><Header></Header></li>
-      </ul>
-
+      {/* <div className={styles.container}>
+        <div className={styles.leftSideBar}></div>
+        <div className={styles.li}>
+          <div><Sidebar></Sidebar></div>
+        </div>
+        <div className={styles.li}><Header></Header></div>
+      </div> */}
       <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      // className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
       >
-        <div>áhdhasgd</div>
+        <Card></Card>
+        <ChartWareHouse></ChartWareHouse>
       </main>
     </div>
   )

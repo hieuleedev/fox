@@ -1,19 +1,21 @@
 // components/Navbar.js
+'use client'
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from '../../../styles/styles.module.css';
-import IconArrowForward from "../icons/IconArrowForward";
-import Logi from '../img/logi.jpg'
 import IconSetting from '../icons/IconSetting';
 import IconHome from '../icons/IconHome';
 import IconManage from '../icons/IconManage';
 import IconOrder from '../icons/IconOrder';
 import IconBooking from '../icons/IconBooking';
-function Navbar() {
+import IconApoinment from '../icons/IconApoinment';
+import IconWarehouse from '../icons/IconWarehouse';
+import IconCustomer from '../icons/IconCustomer';
+
+function Sidebar({ children }: any) {
     return (
         <nav className={styles.nav}>
             <div className={styles.menu}>Menu</div>
-            <div className={styles.icon}>
+            <div className={styles.icon1}>
                 <IconHome width={20} height={20}></IconHome>
                 <Link href="/" className={styles.navLink}>
                     Trang Chủ
@@ -27,24 +29,43 @@ function Navbar() {
             </div>
             <div className={styles.icon}>
                 <IconOrder width={20} height={20}></IconOrder>
-                <Link href="/contact" className={styles.navLink}>
+                <Link href="/addproduct" className={styles.navLink}>
                     Thêm Sản Phẩm
                 </Link>
             </div>
             <div className={styles.icon}>
                 <IconBooking width={20} height={20}></IconBooking>
-                <Link href="/contact" className={styles.navLink}>
+                <Link href="/home" className={styles.navLink}>
                     Tiện Ích
+                </Link>
+            </div>
+            <div className={styles.icon}>
+                <IconApoinment width={20} height={20} />
+                <Link href="/contact" className={styles.navLink}>
+                    Lịch Hẹn
+                </Link>
+            </div>
+            <div className={styles.icon}>
+                <IconWarehouse width={20} height={20} />
+                <Link href="/contact" className={styles.navLink}>
+                    Quản Lý Kho
+                </Link>
+            </div>
+            <div className={styles.icon}>
+                <IconCustomer width={20} height={20} />
+                <Link href="/contact" className={styles.navLink}>
+                    Khách hàng
                 </Link>
             </div>
             <div className={styles.icon}>
                 <IconSetting width={20} height={20} ></IconSetting>
                 <Link href="/contact" className={styles.navLink}>
-                    Cài Đặt tài Khoản
+                    Cài Đặt Tài Khoản
                 </Link>
             </div>
+            <main>{children}</main>
         </nav>
     );
 }
 
-export default Navbar;
+export default Sidebar;
