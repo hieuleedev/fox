@@ -3,7 +3,6 @@ import { data } from '../../data/data';
 import { FaShoppingBag } from 'react-icons/fa';
 
 const RecentOrders = () => {
-  console.log("data", data)
   return (
     <div className='w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll'>
       <h1>Những đơn đặt hàng gần đây</h1>

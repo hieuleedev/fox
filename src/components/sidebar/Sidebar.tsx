@@ -41,7 +41,7 @@ function Sidebar({ children }: any) {
             </div>
             <div className={styles.icon}>
                 <IconApoinment width={20} height={20} />
-                <Link href="/contact" className={styles.navLink}>
+                <Link href="/calendar" className={styles.navLink}>
                     Lịch Hẹn
                 </Link>
             </div>
