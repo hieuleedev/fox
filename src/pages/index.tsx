@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import Sidebar from '../components/sidebar/Sidebar'
 import Header from '../components/header/Header'
 import styles from '../../styles/styles.module.css';
-import Content from '../app/content/page';
 import Card from '../components/card/Card'
 import ChartWareHouse from '../components/chart/ChartWareHouse'
 import RecentOrders from '../components/orders/RecentOrders'

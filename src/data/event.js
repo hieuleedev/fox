@@ -190,11 +190,11 @@ export const MOCK_EVENTS = [
     },
     {
         id: 22,
-        title: "Đi hẹn hò với em yêu",
+        title: "Đi hẹn hò với người yêu",
         start: "2023-10-13T18:33:28Z",
         end: "2023-10-13T21:02:09Z",
         description:
-            "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+            "Tối nay bắt 7h đi hẹn hò , tặng hoa, tỏ tình em bên bờ biển lãng mạng ",
         color: "blue",
     },
     {
@@ -221,7 +221,7 @@ export const MOCK_EVENTS = [
         start: "2023-10-12T10:55:04Z",
         end: "2023-10-12T14:08:11Z",
         description:
-            "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+            "Đi câu cá với tài mập , Việt Đinh",
         color: "green",
     },
     {
