@@ -40,7 +40,7 @@
      padding: 15px 15px;
      display: flex;
      align-items: center;
-     background-color: rgb(224, 236, 215);
+     /* background-color: rgb(224, 236, 215); */
  }
 
  .icon:hover {

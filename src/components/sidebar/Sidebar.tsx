@@ -10,12 +10,14 @@ import IconBooking from '../icons/IconBooking';
 import IconApoinment from '../icons/IconApoinment';
 import IconWarehouse from '../icons/IconWarehouse';
 import IconCustomer from '../icons/IconCustomer';
+import { useState } from 'react';
 
 function Sidebar({ children }: any) {
+    const [activeLink, setActiveLink] = useState("trang");
     return (
         <nav className={styles.nav}>
             <div className={styles.menu}>Menu</div>
-            <div className={styles.icon1}>
+            <div className={`${styles.icon} ${activeLink === 'Trang Chủ' ? 'text-blue-500' : 'text-gray-500'}`} onClick={() => setActiveLink('Trang Chủ')}>
                 <IconHome width={20} height={20}></IconHome>
                 <Link href="/" className={styles.navLink}>
                     Trang Chủ
