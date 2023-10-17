@@ -233,7 +233,7 @@ export default function CalendarPage() {
                 isEditing={isEditing} // Trạng thái chỉnh sửa
                 onEdit={handleEditEvent} // Hàm để chuyển sang chế độ chỉnh sửa
                 onDelete={handleDeleteEvent} // Hàm để xóa sự kiện
-                onClose={() => setShowModal(false)}
+                onClose={() => setIsEditing(false)}
             />
 
         </div>
